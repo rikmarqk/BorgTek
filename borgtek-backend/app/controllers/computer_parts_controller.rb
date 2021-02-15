@@ -1,0 +1,2 @@
+class ComputerPartsController < ApplicationController
+end
