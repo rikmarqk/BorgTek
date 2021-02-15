@@ -38,11 +38,9 @@ class CreateParts < ActiveRecord::Migration[6.1]
       t.integer :core_name
       t.float :clock_speed 
       t.integer :cores
-      t.string :memory_type
       t.integer :memory_clock 
       t.integer :memory_size 
-      t.integer :power_consumption 
-      t.integer :speed 
+      t.integer :power_consumption
       t.integer :storage
 
       t.timestamps
