@@ -1,6 +1,9 @@
 class CreateParts < ActiveRecord::Migration[6.1]
   def change
     create_table :parts do |t|
+      t.float   :price
+      t.string :category
+      t.string :name
       t.string :brand
       t.string :model
       t.integer :capacity 

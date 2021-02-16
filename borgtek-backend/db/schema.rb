@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2021_02_15_205919) do
   end
 
   create_table "computer_receipts", force: :cascade do |t|
-    t.integer "receipts_id"
+    t.integer "receipt_id"
     t.integer "computer_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -37,6 +37,8 @@ ActiveRecord::Schema.define(version: 2021_02_15_205919) do
     t.string "ram"
     t.string "gpu"
     t.string "hdd"
+    t.string "case"
+    t.string "psu"
     t.string "ssd"
     t.string "purpose"
     t.datetime "created_at", precision: 6, null: false
@@ -44,6 +46,9 @@ ActiveRecord::Schema.define(version: 2021_02_15_205919) do
   end
 
   create_table "parts", force: :cascade do |t|
+    t.float "price"
+    t.string "category"
+    t.string "name"
     t.string "brand"
     t.string "model"
     t.integer "capacity"

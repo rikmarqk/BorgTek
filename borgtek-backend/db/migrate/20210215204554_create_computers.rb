@@ -8,6 +8,8 @@ class CreateComputers < ActiveRecord::Migration[6.1]
       t.string :ram
       t.string :gpu
       t.string :hdd
+      t.string :case
+      t.string :psu
       t.string :ssd
       t.string :purpose
 
