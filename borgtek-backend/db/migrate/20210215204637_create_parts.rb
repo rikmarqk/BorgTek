@@ -13,7 +13,7 @@ class CreateParts < ActiveRecord::Migration[6.1]
       t.string :memory_type
       t.integer :speed
       t.integer :amount 
-      t.string :type
+      t.string :p_type
       t.string :color
       t.string :material 
       t.boolean :power

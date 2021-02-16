@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 2021_02_15_205919) do
     t.string "memory_type"
     t.integer "speed"
     t.integer "amount"
-    t.string "type"
+    t.string "p_type"
     t.string "color"
     t.string "material"
     t.boolean "power"
