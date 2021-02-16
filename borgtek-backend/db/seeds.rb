@@ -33,4 +33,4 @@ Computer.create(name: "comp2",
                 ssd: "ssd2",
                 purpose: "gaming")
 
-ComputerRece
+# ComputerRece
