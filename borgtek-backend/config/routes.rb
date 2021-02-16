@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  resources :users
-  resources :receipts
-  resources :computer_receipts
-  resources :computers, :parts, :computer_receipts
+  resources :users, :computer_receipts, :receipts, :computers, :parts, :computer_receipts
 
 end
