@@ -3,7 +3,7 @@ import React from 'react'
 export default function NavBar() {
     return (
         <div className = "nav-bar">
-            NavBar
+            <p>HOME | CREATE PC | DELETE PC</p>
         </div>
     )
 }

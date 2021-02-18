@@ -4,7 +4,16 @@ const ShowcaseCard = ({computer}) => {
     return (
         <div className="showcase-card">
             <h3>{computer.name}</h3>
-            <h5>{computer.price}</h5>
+            <ul>
+                <li>{computer.price}</li>
+                <li>{computer.mobo}</li>
+                <li>{computer.cpu}</li>
+                <li>{computer.ram}</li>
+                <li>{computer.gpu}</li>
+                <li>{computer.hdd}</li>
+                <li>{computer.ssd}</li>
+                <li>{computer.purpose}</li>
+            </ul>
         </div>
     );
 };
