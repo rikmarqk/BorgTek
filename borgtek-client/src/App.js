@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import React, { Component } from "react";
+import MainContainer from './components/MainContainer.js';
+import SearchBar from './components/SearchBar.js';
+import NavBar from './components/NavBar.js';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Boop
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="ui raised segment">
+        <div className="ui segment violet inverted">
+          <h2>BorgTek</h2>
+        </div>
+        <MainContainer />
+      </div>
   );
 }
 

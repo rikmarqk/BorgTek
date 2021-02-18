@@ -36,3 +36,59 @@
     transform: rotate(360deg);
   }
 }
+
+.main-container {
+  background-color: red ;
+}
+.nav-bar {
+  background-color: black;
+  color: white;
+}
+.search-bar {
+  background-color: green;
+}
+.browse-cards-container {
+  background-color: black;
+  color: white;
+  min-height: 290px;
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  overflow: auto;
+}
+.showcase-container {
+  background-color: black;
+  color: white;
+  /* min-height: 450px; */
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 450px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.preview-card {
+  background-color: grey;
+  width: 276px;
+  height: 250px;
+  color: white;
+  margin: 20px;
+  border-radius: 7px;
+  float: left;
+}
+
+.showcase-card {
+  background-color: grey;
+  width: 910px;
+  height: 410px;
+  color: white;
+  margin: 20px;
+  border-radius: 7px;
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+}
