@@ -11,7 +11,8 @@ class ComputersController < ApplicationController
     end
 
     def create
-
+        @computer = Computer.create(computer_params)
+        render json: @computer 
     end
 
     def update
@@ -19,7 +20,14 @@ class ComputersController < ApplicationController
     end
 
     def delete
-
+        @computer = Computer.find(params[:id])
+        @computer.destroy
+        render json: @computer
     end
     
 end
+
+private
+    def computer_params
+        params.permit(:name, :price, :mobo, :cpu, :ram, :gpu, :hdd, :ssd, :purpose)
+    end 

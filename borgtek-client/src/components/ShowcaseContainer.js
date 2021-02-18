@@ -6,7 +6,7 @@ const ShowcaseContainer = (props) => {
         <div className="showcase-container">
             {
           props.allComputers.map(computer=>{
-            return <ShowcaseCard computer={computer} key={computer.id} />
+            return <ShowcaseCard computer={computer} key={computer.id}/>
             // return <Transaction transaction = {props.dynamicSearch} />
           })
         }
