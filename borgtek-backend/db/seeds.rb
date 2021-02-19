@@ -896,6 +896,85 @@ Computer.create(name: "comp2",
                 ssd: "ssd2",
                 purpose: "gaming")
 
+Computer.create(name: "comp3", 
+                price: 30, 
+                mobo: "mobo1", 
+                cpu: "cpu1",
+                ram: "ram1",
+                gpu: "gpu1",
+                hdd: "hdd1",
+                ssd: "ssd1",
+                purpose: "gaming")
+                
+Computer.create(name: "comp4", 
+                price: 30, 
+                mobo: "mobo1", 
+                cpu: "cpu1",
+                ram: "ram1",
+                gpu: "gpu1",
+                hdd: "hdd1",
+                ssd: "ssd1",
+                purpose: "gaming")
+
+Computer.create(name: "comp5", 
+                price: 30, 
+                mobo: "mobo1", 
+                cpu: "cpu1",
+                ram: "ram1",
+                gpu: "gpu1",
+                hdd: "hdd1",
+                ssd: "ssd1",
+                purpose: "gaming")
+
+Computer.create(name: "comp6", 
+                price: 30, 
+                mobo: "mobo1", 
+                cpu: "cpu1",
+                ram: "ram1",
+                gpu: "gpu1",
+                hdd: "hdd1",
+                ssd: "ssd1",
+                purpose: "gaming")
+
+Computer.create(name: "comp7", 
+                price: 120, 
+                mobo: "mobo2", 
+                cpu: "cpu2",
+                ram: "ram2",
+                gpu: "gpu2",
+                hdd: "hdd2",
+                ssd: "ssd2",
+                purpose: "gaming")
+
+Computer.create(name: "comp8", 
+                price: 30, 
+                mobo: "mobo1", 
+                cpu: "cpu1",
+                ram: "ram1",
+                gpu: "gpu1",
+                hdd: "hdd1",
+                ssd: "ssd1",
+                purpose: "gaming")
+
+Computer.create(name: "comp9", 
+                price: 30, 
+                mobo: "mobo1", 
+                cpu: "cpu1",
+                ram: "ram1",
+                gpu: "gpu1",
+                hdd: "hdd1",
+                ssd: "ssd1",
+                purpose: "gaming")
+
+Computer.create(name: "comp10", 
+                price: 30, 
+                mobo: "mobo1", 
+                cpu: "cpu1",
+                ram: "ram1",
+                gpu: "gpu1",
+                hdd: "hdd1",
+                ssd: "ssd1",
+                purpose: "gaming")
 
 ComputerReceipt.create(computer_id: Computer.first.id, receipt_id: Receipt.first.id)
 ComputerReceipt.create(computer_id: Computer.second.id, receipt_id: Receipt.second.id)
