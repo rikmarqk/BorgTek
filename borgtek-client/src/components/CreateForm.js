@@ -32,14 +32,14 @@ class CreateForm extends Component {
     body: JSON.stringify(newComputer)
   })
   .then(resp=>resp.json())
-  .then(data=>this.props.handleSubmit(data))
+  .then(data=>this.props.submitUpdate(data))
   console.log(newComputer)
   }
 
     render() {
     return (
         <div className="create-form">
-        Create Form
+        <p>Customize Computer:</p>
             <form className="ui form" onSubmit={this.handleSubmit}>
           <div className="inline fields">
             <input onChange={(e)=> this.setState({name:e.target.value})} type="text" name="name" placeholder="Name" />

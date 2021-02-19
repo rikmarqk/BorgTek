@@ -24,10 +24,22 @@ componentDidMount = () => {
   .then(compsData => this.setState({allComputers: compsData}))
 }
 
-handleSubmit = (newComputer) => {
+submitUpdate = (newComputer) => {
   this.setState({
     allComputers: [newComputer, ...this.state.allComputers]
   });
+}
+
+handleDelete =(selectedComputer) => {
+    console.log(COMPUTERS_URL+`/${selectedComputer.id}`)
+    fetch(COMPUTERS_URL+`/${selectedComputer.id}`, {
+    headers: {"Content-Type": "application/json"},
+    method: 'DELETE'
+  })
+  .then(resp => resp.json())
+  .then(resp => this.setState({
+        allComputers: this.state.allComputers.filter((computer)=> computer != selectedComputer)
+    }))
 }
 
 editSearch = (e) => {
@@ -35,24 +47,14 @@ editSearch = (e) => {
   this.setState ({search: e.target.value})
 }
 
-
-
-handleDelete =(selectedComputer) => {
-    console.log(selectedComputer)
-    this.setState({
-        allComputers: this.state.allComputers.filter((computer)=> computer != selectedComputer)
-    })
-}
-
-
-
     render(){
     return (
         <div className ="main-container">
-            MainContainer
             <NavBar />
+            <div className="search-create-container">
             <SearchBar search={this.state.search} editSearch={this.editSearch}/>
-            <CreateForm handleSubmit={this.handleSubmit} />
+            <CreateForm submitUpdate={this.handleSubmit} />
+            </div>
             <ShowcaseContainer allComputers={this.state.allComputers}/>
             <BrowseCardsContainer allComputers={this.state.allComputers.filter(computer => computer.name.toLowerCase().includes(this.state.search.toLowerCase()))} handleDelete={this.handleDelete} />
         </div>

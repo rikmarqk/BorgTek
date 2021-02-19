@@ -37,23 +37,40 @@
   }
 }
 
+body {
+  background-color: #2d323b;
+}
+
 .main-container {
-  background-color: red ;
+  background-color: black;
+  color: white;
+  /* display: flex;
+  justify-content: center */
 }
 .nav-bar {
   background-color: black;
   color: white;
+  width: 900px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
 }
+.search-create-container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .search-bar {
-  background-color: green;
+  background-color: black;
+  padding: 5px;
 }
 .browse-cards-container {
   background-color: black;
   color: white;
   min-height: 290px;
   width: 950px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   height: auto;
   overflow: auto;
 }
@@ -67,10 +84,12 @@
   height: 450px;
   overflow: auto;
   white-space: nowrap;
+  /* display: inline-grid;
+  grid-auto-flow: column; */
 }
 
 .preview-card {
-  background-color: grey;
+  background-color: #2d323b;
   width: 276px;
   height: 350px;
   color: white;
@@ -80,7 +99,7 @@
 }
 
 .showcase-card {
-  background-color: grey;
+  background-color: #2d323b;
   width: 910px;
   height: 410px;
   color: white;
